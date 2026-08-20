@@ -4,3 +4,21 @@
 @media(max-width:1000px){.nav-list{gap:16px}.product-grid{grid-template-columns:repeat(2,1fr)}.service-grid{grid-template-columns:repeat(3,1fr)}.hero-inner{grid-template-columns:1fr .7fr;gap:35px}.hero-visual img{height:520px}.about-inner{gap:45px}.footer-inner{grid-template-columns:1.4fr 1fr 1fr 1fr}}
 @media(max-width:760px){:root{--container:min(100% - 28px,620px)}.header-inner{height:68px}.btn-call span{display:none}.btn-call{width:42px;height:42px;padding:0}.hamburger{display:block}.main-nav{position:absolute;top:68px;left:0;right:0;background:#14181d;border-bottom:1px solid rgba(255,255,255,.1);display:none}.main-nav.open{display:block}.nav-list{flex-direction:column;gap:0;padding:10px 14px 18px}.nav-list li a{display:block;padding:12px 10px}.hero-inner,.about-inner,.quote-inner,.contact-inner{grid-template-columns:1fr}.hero{min-height:auto}.hero-inner{padding:65px 0}.hero-title{font-size:42px}.hero-visual{margin-top:12px}.hero-visual img{height:430px}.hero-visual-card{left:12px}.about,.products,.why-us,.services,.quote,.trust,.contact{padding:75px 0}.about-visual{order:2}.about-visual img{height:430px}.product-grid,.feature-grid,.testimonial-grid{grid-template-columns:1fr 1fr}.service-grid{grid-template-columns:1fr 1fr}.stats-grid{grid-template-columns:1fr 1fr}.footer-inner{grid-template-columns:1fr 1fr}.form-row{grid-template-columns:1fr}.contact-map{min-height:320px}.contact-form{padding:22px}}
 @media(max-width:480px){.logo-text{font-size:11px}.logo-mark{width:38px;height:38px}.hero-title{font-size:35px}.hero-desc{font-size:14px}.hero-cta .btn{width:100%}.product-grid,.feature-grid,.service-grid,.testimonial-grid,.stats-grid,.footer-inner{grid-template-columns:1fr}.section-title{font-size:32px}.hero-visual img{height:360px}.whatsapp-float{right:14px;bottom:14px}.back-to-top{right:14px;bottom:78px}}
+/* FIX: Make website content visible */
+.hero-content,
+.hero-content *,
+.reveal,
+.reveal * {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.hero {
+  min-height: 600px !important;
+}
+
+section {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
